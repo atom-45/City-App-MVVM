@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RoomTesting</string>
+    <string name="city_name">City Name</string>
+    <string name="country">Country</string>
+    <string name="post_code">Post Code</string>
+    <string name="services">Services</string>
+    <string name="population_number">Population Number</string>
+    <string name="button">Store</string>
+    <string name="display">Display</string>
+</resources>

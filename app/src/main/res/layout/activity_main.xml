@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.MainActivity">
+
+    <EditText
+        android:id="@+id/cityNameEditText"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:hint="@string/city_name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/countryEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/countryEditText"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:hint="@string/country"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/numberOfPeopleEditText"
+        app:layout_constraintEnd_toEndOf="@+id/cityNameEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cityNameEditText"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/numberOfPeopleEditText"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:hint="@string/population_number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/postCodeEditText"
+        app:layout_constraintEnd_toEndOf="@+id/countryEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/countryEditText"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/postCodeEditText"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:hint="@string/post_code"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/servicesEditText"
+        app:layout_constraintEnd_toEndOf="@+id/numberOfPeopleEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/numberOfPeopleEditText"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/servicesEditText"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        android:hint="@string/services"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/postCodeEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/postCodeEditText"
+        android:importantForAutofill="no" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/button"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/display"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

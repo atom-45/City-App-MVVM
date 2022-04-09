@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="post_code">Post Code</string>
+    <string name="services">Services</string>
+    <string name="button">Button</string>
+    <string name="display">display</string>
+</resources>
